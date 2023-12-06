@@ -17,6 +17,12 @@ function App() {
 
   const result = words.filter((word) => word.length < 6);
 
+  const items = ["item1", "item2", "item3", "item4", "item5"];
+  items.splice(0, 1);
+  const removed = items.splice(0, 1);
+  console.log(removed);
+  items.splice(1, 0, removed[0]);
+
   return (
     <div>
       {/* map関数 */}
@@ -35,7 +41,11 @@ function App() {
       {/* 条件を満たした要素だけを残す関数 */}
       {/* 条件を満たさない要素を削除する */}
       <h1>filter-practice</h1>
-      {console.log(result)}
+      <div>{result}</div>
+      <hr />
+      {/* splice関数 */}
+      {/* 配列から要素を削除する関数 */}
+      <h1>splice-practice</h1>
     </div>
   );
 }
