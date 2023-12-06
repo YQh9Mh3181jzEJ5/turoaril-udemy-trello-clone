@@ -46,6 +46,10 @@ function App() {
       {/* splice関数 */}
       {/* 配列から要素を削除する関数 */}
       <h1>splice-practice</h1>
+      <hr />
+      {/* 三項演算子 */}
+      <h1>三項演算子</h1>
+      {true ? <div>True</div> : <div>False</div>}
     </div>
   );
 }
